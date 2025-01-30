@@ -5,7 +5,7 @@ import TextForm from './components/TextForm.js';
 import About from './components/About.js';
 import { useState } from 'react';
 import Alerts from './components/Alerts.js';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+//import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('dark');
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-     <BrowserRouter>
+     {/* <BrowserRouter>
       <Navbar dropName= 'Yulo' modeType = {mode} onToggle= {toggleMode} themeChange ={themeChange}/>
       <Alerts mode={mode} alert = {alertMsg}></Alerts>
       <div className='container my-3' >
@@ -54,7 +54,13 @@ function App() {
     </Routes>
     
     </div>
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <Navbar dropName= 'Yulo' modeType = {mode} onToggle= {toggleMode} themeChange ={themeChange}/>
+      <Alerts mode={mode} alert = {alertMsg}></Alerts>
+      <div className='container my-3' >
+      <TextForm heading='Senku Day One' modeType={mode} alert = {showAlert} />
+      {/* <About></About> */}
+      </div>
     </>
   );
 }

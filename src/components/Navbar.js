@@ -19,9 +19,10 @@ const handleColour = (color) =>{
     <>
     <nav className={`navbar navbar-expand-lg  navbar-${props.modeType} bg-${props.modeType}`}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        {/* <Link className="navbar-brand" to="/"> */}
+        <a className="navbar-brand" href="#">
           Frosty
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -36,9 +37,10 @@ const handleColour = (color) =>{
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/about">
+              {/* <Link className="nav-link active" aria-current="page" to="/about"> */}
+              <a className="nav-link active" aria-current="page" href="#">
                 Home
-              </Link>
+              </a>
             </li>
             <li className="nav-item dropdown">
               <a
